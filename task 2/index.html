@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a
+      href="https://www.w3schools.com/"
+      id="w3s"
+      type="text/html"
+      rel="nofollow"
+      target="_self"
+      >w3schools</a
+    >
+    <div id="outputDiv"></div>
+    <button onclick="getAttributes()">
+      Click me to get attributes of the link
+    </button>
+    <script>
+      function getAttributes() {
+        const link = document.getElementById("w3s");
+        const attributes = [...link.attributes];
+        const outputDiv = document.getElementById("outputDiv");
+        const ul = document.createElement("ul");
+
+        attributes.map((attr) => {
+          let li = document.createElement("li");
+          li.innerHTML = `<b>${attr.name}:</b> ${attr.value}`;
+          ul.appendChild(li);
+        });
+
+        [...outputDiv.children].map((child) => outputDiv.removeChild(child));
+
+        outputDiv.appendChild(ul);
+      }
+    </script>
+  </body>
+</html>

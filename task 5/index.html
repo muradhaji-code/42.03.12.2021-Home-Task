@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="myForm">
+      <label for="fname">Select your favorite color:</label>
+      <select name="favcolor" id="mySelect">
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+        <option value="white">White</option>
+      </select>
+      <br />
+      <button>Count and output all items</button>
+    </form>
+    <script>
+      let form = document.getElementById("myForm");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        let options = [...e.target.elements.favcolor.options];
+        alert(`Options count: ${options.length}`);
+      });
+    </script>
+  </body>
+</html>

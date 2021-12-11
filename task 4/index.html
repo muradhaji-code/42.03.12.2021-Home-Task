@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="myForm">
+      <label for="fname">Firstname:</label>
+      <input type="text" name="fname" value="David" id="fname" />
+      <br />
+      <label for="lname">Lastname:</label>
+      <input type="text" name="lname" value="Beckham" id="lname" />
+      <br />
+      <button>Submit</button>
+    </form>
+    <script>
+      let form = document.getElementById("myForm");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        let fname = e.target.elements.fname.value;
+        let lname = e.target.elements.lname.value;
+        alert(`fname: ${fname}, lname: ${lname}`);
+      });
+    </script>
+  </body>
+</html>

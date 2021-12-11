@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table id="demoTable" border="1"></table>
+    <script>
+      let table = document.getElementById("demoTable");
+      let rowCount = 2;
+      let colCount = 3;
+      for (let i = 0; i < rowCount; i++) {
+        let tr = document.createElement("tr");
+        for (let j = 0; j < colCount; j++) {
+          let td = document.createElement("td");
+          td.innerHTML = `Row ${i + 1} - Cell ${j + 1}`;
+          tr.appendChild(td);
+        }
+        table.appendChild(tr);
+      }
+    </script>
+  </body>
+</html>

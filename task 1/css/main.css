@@ -1,0 +1,113 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+  color: #080a3c;
+}
+
+p,
+ul {
+  color: #4a6f8a;
+}
+
+body {
+  min-height: 100vh;
+}
+
+body section {
+  height: 100%;
+}
+
+body section .inner {
+  padding: 4rem 2rem;
+  -webkit-box-shadow: 0 10px 35px 5px rgba(137, 173, 255, 0.15);
+          box-shadow: 0 10px 35px 5px rgba(137, 173, 255, 0.15);
+}
+
+body section .inner ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+body section .inner ul li i {
+  color: #13c4a1;
+}
+
+body section .inner button {
+  padding: 6px 12px;
+  border-radius: 4px;
+  background-color: #ff612f;
+  color: #fff;
+  border: none;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+body section .inner button:hover {
+  background-color: #13c4a1;
+}
+
+body section .inner button i {
+  color: #080a3c;
+}
+
+body section .inner a {
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 500;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+body section .inner a.number {
+  color: #13c4a1;
+}
+
+body section .inner a.number:hover {
+  color: #ff612f;
+}
+
+body section .inner a.email {
+  color: #ff612f;
+}
+
+body section .inner a.email:hover {
+  color: #13c4a1;
+}
+
+body section .inner .social-icons i {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  color: #aba5a5;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+body section .inner .social-icons i:hover {
+  background-color: #13c4a1;
+  border-color: #13c4a1;
+  color: #fff;
+}
+/*# sourceMappingURL=main.css.map */

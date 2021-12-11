@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let box1 = document.createElement("div");
+      box1.innerHTML = "box1";
+      box1.style.width = "200px";
+      box1.style.height = "200px";
+      box1.style.backgroundColor = "orange";
+      box1.style.padding = "16px";
+      box1.style.margin = "8px";
+      box1.style.border = "4px solid green";
+      box1.style.float = "left";
+
+      let box1s = document.createElement("div");
+      box1s.innerHTML = "box1s";
+      box1s.style.width = "200px";
+      box1s.style.height = "200px";
+      box1s.style.padding = "16px";
+      box1s.style.margin = "8px";
+      box1s.style.border = "4px solid red";
+      box1s.style.float = "left";
+      let h1 = document.createElement("h1");
+      h1.innerHTML = "hi";
+      box1s.appendChild(h1);
+
+      let box2 = document.createElement("div");
+      box2.innerHTML = "box2";
+      box2.style.width = "100px";
+      box2.style.height = "100px";
+      box2.style.padding = "16px";
+      box2.style.margin = "8px";
+      box2.style.border = "4px solid green";
+      box2.style.float = "left";
+
+      let boxempty = document.createElement("div");
+      boxempty.style.width = "200px";
+      boxempty.style.height = "200px";
+      boxempty.style.padding = "16px";
+      boxempty.style.margin = "8px";
+      boxempty.style.border = "4px solid red";
+      boxempty.style.float = "left";
+
+      let flexbox = document.createElement("div");
+      flexbox.style.display = "flex";
+      flexbox.style.alignItems = "flex-end";
+
+      flexbox.appendChild(box1);
+      flexbox.appendChild(box1s);
+      flexbox.appendChild(box2);
+      flexbox.appendChild(boxempty);
+
+      document.body.appendChild(flexbox);
+    </script>
+  </body>
+</html>
